@@ -10,7 +10,7 @@ def load_data(filename):
     return data['nodes'], data['arcs']
 
 # Beispiel: Lade die Daten aus der JSON-Datei
-filename = 'data.json'  # Pfad zur JSON-Datei
+filename = 'Data/chvatal_small.json'  # Pfad zur JSON-Datei
 nodes, arcs = load_data(filename)
 
 # Starte den Timer
