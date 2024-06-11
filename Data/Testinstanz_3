@@ -1,4 +1,5 @@
-nodes = {
+{
+  "nodes": {
     "1": {"demand": -5},
     "2": {"demand": 2},
     "3": {"demand": 6},
