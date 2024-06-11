@@ -2,9 +2,9 @@
   "nodes": {
     "1": {"demand": -9},
     "2": {"demand": 12},
-    "4": {"demand": 9},
-    "5": {"demand": -5},
-    "6": {"demand": -7}
+    "3": {"demand": 9},
+    "4": {"demand": -5},
+    "5": {"demand": -7}
   },
   "arcs": [
     {
@@ -16,42 +16,42 @@
     },
     {
       "from": "1",
-      "to": "5",
+      "to": "4",
       "cost": 1,
       "lower_bound": 0,
       "upper_bound": 10
     },
     {
-      "from": "4",
+      "from": "3",
       "to": "2",
       "cost": 4,
       "lower_bound": 0,
       "upper_bound": 8
     },
     {
-      "from": "5",
-      "to": "4",
+      "from": "4",
+      "to": "3",
       "cost": 1,
       "lower_bound": 0,
       "upper_bound": 10
     },
     {
-      "from": "5",
-      "to": "6",
+      "from": "4",
+      "to": "5",
       "cost": 1,
       "lower_bound": 0,
       "upper_bound": 6
     },
     {
-      "from": "6",
+      "from": "5",
       "to": "2",
       "cost": 1,
       "lower_bound": 0,
       "upper_bound": 7
     },
     {
-      "from": "6",
-      "to": "4",
+      "from": "5",
+      "to": "3",
       "cost": 1,
       "lower_bound": 0,
       "upper_bound": 8
