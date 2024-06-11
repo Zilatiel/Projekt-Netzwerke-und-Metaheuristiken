@@ -4,6 +4,13 @@
 
 
 if __name__ == "__main__":
+    with open('Data/chvatal_small.json', 'r') as f:
+        data = json.load(f)
+
+    city_data = {}
+    for city in city_data_json:
+        city_data[city['city']] = (float(city['lat']), float(city['lng']))
+
     max_iterations = 50
     final_edges = None
 
