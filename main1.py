@@ -1,6 +1,6 @@
 import json
 # Datei öffnen und lesen
-with open('chvatal_small.json', 'r') as file:
+with open('Data/chvatal_small.json', 'r') as file:
     data = json.load(file)
 
 
