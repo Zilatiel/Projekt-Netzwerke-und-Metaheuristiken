@@ -9,7 +9,7 @@
     "7": {"demand": 4}
 }
 
-arcs2 = [
+  "arcs": [
     {"from": "1", "to": "2", "cost": 16, "lower_bound": 0, "upper_bound": 1000},
     {"from": "1", "to": "5", "cost": 10, "lower_bound": 0, "upper_bound": 1000},
     {"from": "1", "to": "6", "cost": 10, "lower_bound": 0, "upper_bound": 1000},
