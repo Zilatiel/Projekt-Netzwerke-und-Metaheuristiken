@@ -3,7 +3,7 @@
     "1": {"demand": -9},
     "2": {"demand": 2},
     "3": {"demand": 12},
-    "4": {"demand": -5},
+    "4": {"demand": -5}
   },
   "arcs": [
     {"from": "1", "to": "2", "cost": 3, "lower_bound": 0, "upper_bound": 2},
