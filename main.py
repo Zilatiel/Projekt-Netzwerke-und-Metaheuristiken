@@ -1,5 +1,6 @@
 #import random
 import json
+from lib import initialize, network
 
 if __name__ == "__main__":
     #load_data('Data/chvatal_small.json')
@@ -16,17 +17,17 @@ if __name__ == "__main__":
         #w = random.choice(list(nodes.keys()))
         w = "1"
         print(f"Starting with node w = {w}")
-        edges_input, initial_costs = initialize_network(w)
+        edges_input, initial_costs = initialize.initialize_network(w)
 
-        network = Network(edges_input, initial_costs)
+        network = class_network.Network(edges_input, initial_costs)
         iteration = 0
 
         while iteration < max_iterations:
             iteration += 1
-            updated_edges = network.iterate(iteration)
+            updated_edges = class_network.iterate(iteration)
             if updated_edges:
                 final_edges = updated_edges
-                network = Network(updated_edges, initial_costs)
+                network = class_network.Network(updated_edges, initial_costs)
             else:
                 break
 
@@ -49,7 +50,7 @@ if __name__ == "__main__":
             print(f"    {edge}: {{'cost': {attrs['cost']}, 'flow': {attrs['flow']}, 'in_basis': {attrs['in_basis']}, 'upper': {attrs['upper']}}},")
 
         # Run again with updated costs
-        network = Network(initial_final_edges, updated_costs)
+        network = class_network.Network(initial_final_edges, updated_costs)
         iteration = 0
         final_edges = None
 
@@ -58,7 +59,7 @@ if __name__ == "__main__":
             updated_edges = network.iterate(iteration)
             if updated_edges:
                 final_edges = updated_edges
-                network = Network(updated_edges, updated_costs)
+                network = class_network.Network(updated_edges, updated_costs)
             else:
                 break
 
@@ -87,7 +88,7 @@ if __name__ == "__main__":
           print(f"    {edge}: {{'cost': {attrs['cost']}, 'flow': {attrs['flow']}, 'in_basis': {attrs['in_basis']}, 'upper': {attrs['upper']}}},")
 
       # Run again with updated costs
-      network = Network(initial_final_edges, updated_costs)
+      network = class_network.Network(initial_final_edges, updated_costs)
       iteration = 0
       final_edges = None
 
@@ -96,7 +97,7 @@ if __name__ == "__main__":
           updated_edges = network.iterate(iteration)
           if updated_edges:
               final_edges = updated_edges
-              network = Network(updated_edges, updated_costs)
+              network = class_network.Network(updated_edges, updated_costs)
           else:
               break
 
