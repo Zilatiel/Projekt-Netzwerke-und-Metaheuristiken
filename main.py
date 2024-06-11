@@ -1,8 +1,13 @@
 #import random
 
 if __name__ == "__main__":
-    load_data('Data/chvatal_small.json')
+    #load_data('Data/chvatal_small.json')
     
+    open('Data/chvatal_small.json', 'r') as file
+    data = json.load(file)
+    nodes = data['nodes']
+    arcs2 = data['arcs']
+
     max_iterations = 50
     final_edges = None
 
