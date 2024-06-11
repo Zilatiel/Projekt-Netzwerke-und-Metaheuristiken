@@ -6,7 +6,6 @@ def initialize_network(w):
     for arc in arcs:
       arc["cost"] = 0
 
-
     new_arcs = []
     existing_arcs = []
 
