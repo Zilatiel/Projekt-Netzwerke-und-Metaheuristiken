@@ -1,1 +1,15 @@
-
+{
+  "nodes": {
+    "1": {"demand": 4},
+    "2": {"demand": 3},
+    "3": {"demand": 1},
+    "4": {"demand": -8}
+  },
+  "arcs": [
+    {"from": "1", "to": "2", "cost": 1, "lower_bound": 0, "upper_bound": 6},
+    {"from": "3", "to": "1", "cost": 4, "lower_bound": 0, "upper_bound": 8},
+    {"from": "3", "to": "2", "cost": 1, "lower_bound": 0, "upper_bound": 9},
+    {"from": "4", "to": "1", "cost": 1, "lower_bound": 0, "upper_bound": 7},
+    {"from": "4", "to": "3", "cost": 1, "lower_bound": 0, "upper_bound": 8}
+  ]
+}
